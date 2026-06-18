@@ -12,10 +12,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - name: Extract ZIP file
-      run: |
-        unzip agon-agent_2-de22ac95.zip -d ./project
-        mv ./project/* ./*
+- name: Extract ZIP file
+      run: unzip agon-agent_2-de22ac95.zip -d ./
     
     - name: Set up JDK 17
       uses: actions/setup-java@v4
